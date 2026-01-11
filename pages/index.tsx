@@ -4,11 +4,6 @@ import axios from "axios";
 
 import PropertyCard from "@/components/property/PropertyCard";
 
-interface Property {
-  id: string | number;
-  [key: string]: any;
-}
-
 export default function Home() {
   const [properties, setProperties] = useState<Property[]>([]);
   const [loading, setLoading] = useState(true);
